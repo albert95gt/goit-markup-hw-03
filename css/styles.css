@@ -245,7 +245,7 @@ img {
   .our-team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc( -1 *  var(--primary-margin))
+    margin-top: calc( -1 *  var(--primary-margin));
     margin-left: calc( -1 *  var(--primary-margin));
   }
   .our-team-list-item {
@@ -321,7 +321,7 @@ img {
   .btn-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 
   }
   .btn-list :not(:last-child) {
