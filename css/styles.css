@@ -209,11 +209,13 @@ img {
   .features-list{
     display: flex;
     flex-wrap: wrap;
+    margin-top: calc( -1 *  var(--primary-margin));
     margin-left: calc( -1 *  var(--primary-margin));
   }
   .features-list-item{
     flex-basis: calc((100% - 120px) / 4);
-    margin-left: var(--primary-margin)
+    margin-top: var(--primary-margin);
+    margin-left: var(--primary-margin);
   }
   .desc {
     line-height: 1.71;
@@ -228,11 +230,13 @@ img {
  .our-work-list {
    display: flex;
    flex-wrap: wrap;
+   margin-top: calc( -1 *  var(--primary-margin));
    margin-left: calc( -1 *  var(--primary-margin));
 
  }
  .our-work-list-item {
    flex-basis: calc((100% - 90px) / 3);
+   margin-top: var(--primary-margin);
    margin-left: var(--primary-margin);
  }
   /* ========= End Our Work ========= */
@@ -241,10 +245,12 @@ img {
   .our-team-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: calc( -1 *  var(--primary-margin))
     margin-left: calc( -1 *  var(--primary-margin));
   }
   .our-team-list-item {
     flex-basis: calc((100% - 120px) / 4);
+    margin-top: var(--primary-margin);
     margin-left: var(--primary-margin);
   }
   .card-content {
