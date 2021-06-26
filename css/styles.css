@@ -8,7 +8,7 @@
   --primery-white-colour:#FFFFFF;
   --dark-background-color:#2F303A;
   --secondary-background-color:#F5F4FA;
-  --primary-margin-left: 30px;
+  --primary-margin: 30px;
   }
 
 body {
@@ -116,8 +116,10 @@ img {
   }
   .header {
     padding-top: 24px;
-    padding-bottom: 25px;
-  }
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid #ECECEC;
+    }
   .logo {
     margin-right: 92px;
 
@@ -157,6 +159,7 @@ img {
  /* ========= Hero ========= */
   .hero {
     text-align: center;
+    background: var(--dark-background-color)
   }
   .hero-container {
     padding-top: 200px;
@@ -164,10 +167,10 @@ img {
     padding-left: 237px;
     padding-right: 237px;
     
-    background: var(--dark-background-color)
+    
   }
   .hero-title {
-    margin-bottom: 30px;
+    margin-bottom: var(--primary-margin);
 
     font-weight: 900;
     font-size: 44px;
@@ -179,6 +182,8 @@ img {
   .button {
     padding: 10px 32px;
 
+    border: none;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -204,11 +209,11 @@ img {
   .features-list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    margin-left: calc( -1 *  var(--primary-margin));
   }
   .features-list-item{
     flex-basis: calc((100% - 120px) / 4);
-    margin-left: 30px;
+    margin-left: var(--primary-margin)
   }
   .desc {
     line-height: 1.71;
@@ -223,12 +228,12 @@ img {
  .our-work-list {
    display: flex;
    flex-wrap: wrap;
-   margin-left: -30px;
+   margin-left: calc( -1 *  var(--primary-margin));
 
  }
  .our-work-list-item {
    flex-basis: calc((100% - 90px) / 3);
-   margin-left: var(--primary-margin-left);
+   margin-left: var(--primary-margin);
  }
   /* ========= End Our Work ========= */
 
@@ -236,11 +241,11 @@ img {
   .our-team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    margin-left: calc( -1 *  var(--primary-margin));
   }
   .our-team-list-item {
     flex-basis: calc((100% - 120px) / 4);
-    margin-left: 30px;
+    margin-left: var(--primary-margin);
   }
   .card-content {
     padding-top: 30px;
@@ -318,6 +323,8 @@ img {
   }
   .btn {
     padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
 
     font-family: 'Roboto', sans-serif;
     background: var(--secondary-background-color); 
@@ -358,18 +365,19 @@ img {
  .card-list {
    display: flex;
    flex-wrap: wrap;
-   margin-top: -30px;
-   margin-left: -30px;
+   margin-top: calc( -1 *  var(--primary-margin));
+   margin-left: calc( -1 *  var(--primary-margin));
  }
  .card-list-item {
    flex-basis: calc((100% - 90px) / 3);
-   margin-top: 30px;
-   margin-left: 30px;
+   margin-top: var(--primary-margin);
+   margin-left: var(--primary-margin)
  }
  
  .card-list-content {
    padding: 20px 24px;
-   border: 1px solid #EEEEEE
+   border: 1px solid #EEEEEE;
+   border-top: 0;
  }
  /* ========= End Cards ========= */
 /* ========= End Portfolio ========= */
